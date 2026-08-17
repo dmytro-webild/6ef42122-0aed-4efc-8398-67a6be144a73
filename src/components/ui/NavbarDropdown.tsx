@@ -62,7 +62,9 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
         </a>
 
         <div className="flex items-center gap-2 xl:gap-3 2xl:gap-4">
-          <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
+          <div className="text-xs sm:text-base [&_button]:text-xs [&_button]:px-2.5 [&_button]:py-1 sm:[&_button]:text-sm sm:[&_button]:px-4 sm:[&_button]:py-2 [&_a]:text-xs [&_a]:px-2.5 [&_a]:py-1.5 sm:[&_a]:text-sm sm:[&_a]:px-4 sm:[&_a]:py-2">
+            <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
+          </div>
 
           <div
             className="relative flex items-center justify-center size-9 rounded cursor-pointer primary-button"
