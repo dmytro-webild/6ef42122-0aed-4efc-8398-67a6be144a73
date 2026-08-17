@@ -11,10 +11,10 @@ export default function ServicesSection(): React.JSX.Element {
     <div id="services" data-section="services">
         <SectionErrorBoundary name="services">
               <AboutFeaturesSplit
-          tag="Our Expertise"
-          title="Comprehensive Car Care"
-          description="We offer a wide range of services to keep your vehicle in top condition, from basic washes to deep upholstery cleaning."
-          items={[
+        tag="Our Expertise"
+        title="Comprehensive Car Care"
+        description="We offer a wide range of services to keep your vehicle in top condition, from basic washes to deep upholstery cleaning."
+        items={[
             {
               icon: Sparkles,
               title: "Exterior Detailing",
@@ -31,9 +31,9 @@ export default function ServicesSection(): React.JSX.Element {
               description: "Eliminate odors and bacteria effectively.",
             },
           ]}
-          imageSrc="https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-3fbl24s2.png?_wi=2"
-          textAnimation="slide-up"
-        />
+        imageSrc="https://picsum.photos/seed/224149249/1200/800"
+        textAnimation="slide-up"
+      />
         </SectionErrorBoundary>
       </div>
   );

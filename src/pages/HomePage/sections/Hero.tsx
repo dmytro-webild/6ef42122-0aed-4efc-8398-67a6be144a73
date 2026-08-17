@@ -10,39 +10,20 @@ export default function HeroSection(): React.JSX.Element {
     <div id="hero" data-section="hero">
         <SectionErrorBoundary name="hero">
               <HeroBillboardCarousel
-          tag="Lava2 Mobile Car Wash"
-          title="We bring the sparkle to your driveway."
-          description="Professional exterior, interior, and detailing treatments that make your car shine. Serving you at home."
-          primaryButton={{
+        tag="Lava2 Mobile Car Wash"
+        title="We bring the sparkle to your driveway."
+        description="Professional exterior, interior, and detailing treatments that make your car shine. Serving you at home."
+        primaryButton={{
             text: "Book via WhatsApp",
             href: "https://wa.me/34656474532",
           }}
-          secondaryButton={{
+        secondaryButton={{
             text: "Email us",
             href: "mailto:matteoronsies@gmail.com",
           }}
-          items={[
-            {
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380592-kfigd504.png",
-            },
-            {
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380593-g1to3c97.png",
-            },
-            {
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-3fbl24s2.png?_wi=1",
-            },
-            {
-              imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-qhvohb13.png",
-            },
-            {
-              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-car-washing-service_23-2149212208.jpg",
-            },
-            {
-              imageSrc: "http://img.b2bpic.net/free-photo/luggage-seen-from-rear-car-window_23-2150934355.jpg",
-            },
-          ]}
-          textAnimation="fade-blur"
-        />
+        items={[{"imageSrc":"https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1600&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?auto=format&fit=crop&w=1600&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&w=1600&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?auto=format&fit=crop&w=1600&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1600&q=80"},{"imageSrc":"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80"}]}
+        textAnimation="fade-blur"
+      />
         </SectionErrorBoundary>
       </div>
   );

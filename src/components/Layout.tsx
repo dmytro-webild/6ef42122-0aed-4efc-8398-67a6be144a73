@@ -54,7 +54,7 @@ export default function Layout() {
       </main>
       <SectionErrorBoundary name="footer">
         <FooterSimple
-      brand="Lava2"
+      brand="LAVA2"
       columns={[
         {
           title: "Services",
