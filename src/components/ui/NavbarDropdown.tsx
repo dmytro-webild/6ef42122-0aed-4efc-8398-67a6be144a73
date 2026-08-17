@@ -42,7 +42,7 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
 
   return (
     <nav data-section="navbar" ref={navRef} className="fixed z-1000 top-5 left-1/2 -translate-x-1/2 w-content-width">
-      <div className="flex items-center justify-between p-2 xl:p-3 2xl:p-4 rounded backdrop-blur-sm card">
+      <div className="flex items-center justify-between p-2 xl:p-3 2xl:p-4 rounded backdrop-blur-md bg-transparent border border-white/10">
         <a href="/" className="pl-2 flex items-center gap-2 group">
           <div className="size-8 rounded-lg bg-gradient-to-br from-primary-cta to-red-600 flex items-center justify-center shadow-lg shadow-primary-cta/30 group-hover:scale-105 transition-transform duration-300">
             <Sparkles className="size-4 text-white animate-pulse" />
