@@ -46,6 +46,25 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
         <a href="/" className="pl-2 text-xl font-medium text-foreground">{logo}</a>
 
         <div className="flex items-center gap-2 xl:gap-3 2xl:gap-4">
+          <select
+            defaultValue="es"
+            onChange={(e) => {
+              const lang = e.target.value;
+              const path = lang === 'es' ? '/' : `/${lang}`;
+              if (window.location.pathname !== path) {
+                window.location.href = path;
+              }
+            }}
+            className="bg-secondary-cta text-secondary-cta-text text-xs font-semibold px-2 py-1.5 rounded cursor-pointer outline-none border border-accent/40 hover:border-primary-cta transition-colors"
+            aria-label="Seleccionar idioma"
+          >
+            <option value="es" className="bg-card text-foreground">🇪🇸 ES</option>
+            <option value="en" className="bg-card text-foreground">🇬🇧 EN</option>
+            <option value="it" className="bg-card text-foreground">🇮🇹 IT</option>
+            <option value="de" className="bg-card text-foreground">🇩🇪 DE</option>
+            <option value="fr" className="bg-card text-foreground">🇫🇷 FR</option>
+          </select>
+
           <Button text={ctaButton.text} href={ctaButton.href} variant="primary" animate={false} />
 
           <div
