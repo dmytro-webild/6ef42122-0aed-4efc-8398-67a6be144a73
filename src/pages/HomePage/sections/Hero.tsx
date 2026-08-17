@@ -18,7 +18,7 @@ const items = [
     imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535144-fuft23fo.jpg"
   },
   {
-    imageSrc: "https://picsum.photos/seed/1529517650/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535143-mijpzt7l.jpg"
   },
   {
     imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535145-foxtyst3.png"
