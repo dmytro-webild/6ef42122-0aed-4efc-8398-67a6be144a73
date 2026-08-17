@@ -33,7 +33,7 @@ export default function HomePage() {
           imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380593-g1to3c97.png",
         },
         {
-          imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-3fbl24s2.png",
+          imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-3fbl24s2.png?_wi=1",
         },
         {
           imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-qhvohb13.png",
@@ -73,7 +73,7 @@ export default function HomePage() {
           description: "Eliminate odors and bacteria effectively.",
         },
       ]}
-      imageSrc="https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-3fbl24s2.png"
+      imageSrc="https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786966380594-3fbl24s2.png?_wi=2"
       textAnimation="slide-up"
     />
     </SectionErrorBoundary>
