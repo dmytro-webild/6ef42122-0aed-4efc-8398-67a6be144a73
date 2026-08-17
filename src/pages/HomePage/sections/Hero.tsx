@@ -15,22 +15,22 @@ const secondaryButton = {
 };
 const items = [
   {
-    imageSrc: "https://picsum.photos/seed/1172429180/1200/800"
+    imageSrc: "https://picsum.photos/seed/106921932/1200/800"
   },
   {
-    imageSrc: "https://picsum.photos/seed/125401554/1200/800"
+    imageSrc: "https://picsum.photos/seed/1529517650/1200/800"
   },
   {
-    imageSrc: "https://picsum.photos/seed/1511038028/1200/800"
+    imageSrc: "https://picsum.photos/seed/231686916/1200/800"
   },
   {
-    imageSrc: "https://picsum.photos/seed/2043188579/1200/800"
+    imageSrc: "https://picsum.photos/seed/637075813/1200/800"
   },
   {
-    imageSrc: "https://picsum.photos/seed/1178568704/1200/800"
+    imageSrc: "https://picsum.photos/seed/847662621/1200/800"
   },
   {
-    imageSrc: "https://picsum.photos/seed/1854187769/1200/800"
+    imageSrc: "https://picsum.photos/seed/225547392/1200/800"
   }
 ];
 
