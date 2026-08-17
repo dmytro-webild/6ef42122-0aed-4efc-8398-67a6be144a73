@@ -21,7 +21,7 @@ const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, on
 
 const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navRef = useRef<HTMLElement>(null);
+  const navRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -48,7 +48,16 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
             <Sparkles className="size-4 text-white animate-pulse" />
           </div>
           <span className="text-xl font-extrabold tracking-tight text-foreground uppercase italic font-sans">
-            LAVA<span className="text-primary-cta">2</span>
+            {logo ? (
+              <>
+                {logo.slice(0, -1)}
+                <span className="text-primary-cta">{logo.slice(-1)}</span>
+              </>
+            ) : (
+              <>
+                LAVA<span className="text-primary-cta">2</span>
+              </>
+            )}
           </span>
         </a>
 

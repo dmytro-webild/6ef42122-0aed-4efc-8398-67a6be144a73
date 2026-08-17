@@ -31,7 +31,7 @@ export default function ServicesSection(): React.JSX.Element {
               description: "Eliminate odors and bacteria effectively.",
             },
           ]}
-        imageSrc="https://picsum.photos/seed/224149249/1200/800"
+        imageSrc="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1200&q=80"
         textAnimation="slide-up"
       />
         </SectionErrorBoundary>
