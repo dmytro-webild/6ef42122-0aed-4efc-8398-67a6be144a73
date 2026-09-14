@@ -8,31 +8,31 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 export default function Layout() {
   const navItems = [
   {
-    "name": "Home",
+    "name": "Inicio",
     "href": "#hero"
   },
   {
-    "name": "Services",
+    "name": "Servicios",
     "href": "#services"
   },
   {
-    "name": "Pricing",
+    "name": "Precios",
     "href": "#pricing"
   },
   {
-    "name": "Contact",
+    "name": "Contacto",
     "href": "#contact"
   },
   {
-    "name": "Loyalty",
+    "name": "Fidelización",
     "href": "#loyalty"
   },
   {
-    "name": "Reviews",
+    "name": "Reseñas",
     "href": "#reviews"
   },
   {
-    "name": "Faq",
+    "name": "FAQ",
     "href": "#faq"
   }
 ];
@@ -44,7 +44,7 @@ export default function Layout() {
         <NavbarDropdown
       logo="Lava2"
       ctaButton={{
-        text: "Book Now",
+        text: "Reservar Ahora",
         href: "https://wa.me/34656474532",
       }}
      navItems={navItems} />
@@ -57,48 +57,48 @@ export default function Layout() {
       brand="LAVA2"
       columns={[
         {
-          title: "Services",
+          title: "Servicios",
           items: [
             {
-              label: "Exterior Detail",
+              label: "Detailing Exterior",
               href: "#services",
             },
             {
-              label: "Interior Clean",
+              label: "Limpieza Interior",
               href: "#services",
             },
             {
-              label: "Ozone Treatment",
+              label: "Tratamiento de Ozono",
               href: "#services",
             },
           ],
         },
         {
-          title: "Contact",
+          title: "Contacto",
           items: [
             {
               label: "WhatsApp",
               href: "https://wa.me/34656474532",
             },
             {
-              label: "Call +34 656474532",
+              label: "Llamar al +34 656474532",
               href: "tel:+34656474532",
             },
             {
-              label: "Email Us",
+              label: "Enviar Email",
               href: "mailto:matteoronsies@gmail.com",
             },
           ],
         },
       ]}
-      copyright="© 2024 Lava2 Car Wash. All rights reserved."
+      copyright="© 2024 Lava2 Car Wash. Todos los derechos reservados."
       links={[
         {
-          label: "Privacy Policy",
+          label: "Política de Privacidad",
           href: "#",
         },
         {
-          label: "Terms of Service",
+          label: "Términos de Servicio",
           href: "#",
         },
       ]}
