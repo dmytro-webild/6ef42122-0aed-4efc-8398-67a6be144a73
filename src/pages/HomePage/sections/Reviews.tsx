@@ -10,43 +10,12 @@ export default function ReviewsSection(): React.JSX.Element {
     <div id="reviews" data-section="reviews">
         <SectionErrorBoundary name="reviews">
               <TestimonialColumnMarqueeCards
-          tag="Trust"
-          title="Client Reviews"
-          description="See why our customers love our mobile car wash service."
-          testimonials={[
-            {
-              name: "Maria Garcia",
-              role: "Satisfied Customer",
-              quote: "Fantastic service! My car looks brand new.",
-              imageSrc: "http://img.b2bpic.net/free-photo/lateral-view-beautiful-blonde-woman-car_23-2148384915.jpg",
-            },
-            {
-              name: "John Smith",
-              role: "Client",
-              quote: "Very professional and convenient at home.",
-              imageSrc: "http://img.b2bpic.net/free-photo/handsome-man-standing-front-car-car-showroom_1303-17540.jpg",
-            },
-            {
-              name: "Lucia Rossi",
-              role: "Customer",
-              quote: "Highly recommend their detailing package.",
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-car-care-process_23-2149193576.jpg",
-            },
-            {
-              name: "David M.",
-              role: "Happy Client",
-              quote: "Excellent work and very reliable team.",
-              imageSrc: "http://img.b2bpic.net/free-photo/man-polish-car-garage_1157-26080.jpg",
-            },
-            {
-              name: "Sophie B.",
-              role: "Client",
-              quote: "Love the convenience of home service.",
-              imageSrc: "http://img.b2bpic.net/free-photo/friend-is-calling-beautiful-businesswoman-trying-her-new-car-automobile-salon_146671-16054.jpg",
-            },
-          ]}
-          textAnimation="fade-blur"
-        />
+        tag="Confianza"
+        title="Opiniones de Clientes"
+        description="Descubre por qué nuestros clientes confían en nuestro servicio de lavado a domicilio."
+        testimonials={[{"role":"Cliente Satisfecha","imageSrc":"http://img.b2bpic.net/free-photo/lateral-view-beautiful-blonde-woman-car_23-2148384915.jpg","quote":"¡Un servicio fantástico! Mi coche quedó como nuevo.","name":"Maria Garcia"},{"quote":"Muy profesional y cómodo al hacerlo en mi propio domicilio.","imageSrc":"http://img.b2bpic.net/free-photo/handsome-man-standing-front-car-car-showroom_1303-17540.jpg","role":"Cliente","name":"John Smith"},{"name":"Lucia Rossi","quote":"Recomiendo totalmente su paquete de detallado completo.","role":"Cliente","imageSrc":"http://img.b2bpic.net/free-photo/close-up-car-care-process_23-2149193576.jpg"},{"name":"David M.","imageSrc":"http://img.b2bpic.net/free-photo/man-polish-car-garage_1157-26080.jpg","role":"Cliente Satisfecho","quote":"Excelente trabajo y un equipo muy puntual y confiable."},{"quote":"Me encanta la comodidad del servicio de lavado en mi casa.","role":"Cliente","imageSrc":"http://img.b2bpic.net/free-photo/friend-is-calling-beautiful-businesswoman-trying-her-new-car-automobile-salon_146671-16054.jpg","name":"Sophie B."}]}
+        textAnimation="fade-blur"
+      />
         </SectionErrorBoundary>
       </div>
   );

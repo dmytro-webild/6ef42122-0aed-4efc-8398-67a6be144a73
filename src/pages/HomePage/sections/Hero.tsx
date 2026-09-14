@@ -6,11 +6,11 @@ import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
 
 const primaryButton = {
-  text: "Book via WhatsApp",
+  text: "Reservar por WhatsApp",
   href: "https://wa.me/34656474532"
 };
 const secondaryButton = {
-  text: "Email us",
+  text: "Enviar Email",
   href: "mailto:matteoronsies@gmail.com"
 };
 const items = [
@@ -55,11 +55,11 @@ const HeroInline = () => {
       <HeroBackgroundSlot />
       <div className="flex flex-col items-center gap-3 w-content-width mx-auto text-center">
         <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
-          <p>{"Lava2 Mobile Car Wash"}</p>
+          <p>{"Lava2 Lavado de Coches a Domicilio"}</p>
         </div>
 
         <TextAnimation
-          text={"We bring the sparkle to your driveway."}
+          text={"Llevamos el brillo a la puerta de tu casa."}
           variant={"fade-blur"}
           gradientText={true}
           tag="h1"
@@ -67,7 +67,7 @@ const HeroInline = () => {
         />
 
         <TextAnimation
-          text={"Professional exterior, interior, and detailing treatments that make your car shine. Serving you at home."}
+          text={"Servicios profesionales de detallado, lavado exterior e interior para que tu coche luzca impecable a domicilio."}
           variant={"fade-blur"}
           gradientText={false}
           tag="p"
