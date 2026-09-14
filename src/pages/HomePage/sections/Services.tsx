@@ -11,18 +11,18 @@ import { resolveIcon } from "@/utils/resolve-icon";
 const items = [
   {
     icon: Sparkles,
-    title: "Exterior Detailing",
-    description: "Hand wash, wax, and premium exterior treatments."
+    title: "Detallado Exterior",
+    description: "Lavado a mano, encerado y tratamientos exteriores premium."
   },
   {
     icon: Briefcase,
-    title: "Interior Cleaning",
-    description: "Vacuuming, upholstery care, and disinfection."
+    title: "Limpieza Interior",
+    description: "Aspirado completo, cuidado de tapicería y desinfección."
   },
   {
     icon: Wind,
-    title: "Ozone Treatment",
-    description: "Eliminate odors and bacteria effectively."
+    title: "Tratamiento de Ozono",
+    description: "Elimina olores y bacterias de forma eficaz."
   }
 ];
 
@@ -45,11 +45,11 @@ const ServicesInline = () => {
       <div className="flex flex-col gap-8 md:gap-10 mx-auto w-content-width">
         <div className="flex flex-col items-center gap-2">
           <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
-            <p>{"Our Expertise"}</p>
+            <p>{"Nuestra Especialidad"}</p>
           </div>
 
           <TextAnimation
-            text={"Comprehensive Car Care"}
+            text={"Cuidado Integral para tu Vehículo"}
             variant={"slide-up"}
             gradientText={true}
             tag="h2"
@@ -57,7 +57,7 @@ const ServicesInline = () => {
           />
 
           <TextAnimation
-            text={"We offer a wide range of services to keep your vehicle in top condition, from basic washes to deep upholstery cleaning."}
+            text={"Ofrecemos una amplia gama de servicios para mantener tu coche impecable, desde lavados básicos hasta limpieza profunda de tapicería."}
             variant={"slide-up"}
             gradientText={false}
             tag="p"

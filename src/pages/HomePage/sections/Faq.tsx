@@ -10,25 +10,12 @@ export default function FaqSection(): React.JSX.Element {
     <div id="faq" data-section="faq">
         <SectionErrorBoundary name="faq">
               <FaqTwoColumn
-          tag="Info"
-          title="Frequently Asked Questions"
-          description="Answers to common questions about our car wash services."
-          items={[
-            {
-              question: "Do you come to my home?",
-              answer: "Yes, we are a mobile service and will come to your location.",
-            },
-            {
-              question: "What is the surcharge for SUVs?",
-              answer: "SUV/vans have a small surcharge of +€10.",
-            },
-            {
-              question: "How do I book a wash?",
-              answer: "You can book via WhatsApp, phone (+34 656474532), or email.",
-            },
-          ]}
-          textAnimation="slide-up"
-        />
+        tag="Preguntas Frecuentes"
+        title="Preguntas Frecuentes"
+        description="Respuestas a las preguntas más frecuentes sobre nuestros servicios de lavado a domicilio."
+        items={[{"question":"¿Os desplazáis a mi domicilio?","answer":"Sí, somos un servicio 100% móvil y nos desplazamos hasta tu domicilio o lugar de trabajo."},{"answer":"Los vehículos tipo SUV o furgonetas tienen un pequeño suplemento de +10 €.","question":"¿Cuál es el suplemento para SUVs o todoterrenos?"},{"question":"¿Cómo puedo reservar un servicio?","answer":"Puedes reservar directamente por WhatsApp, teléfono (+34 656474532) o correo electrónico."}]}
+        textAnimation="slide-up"
+      />
         </SectionErrorBoundary>
       </div>
   );

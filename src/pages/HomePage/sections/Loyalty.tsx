@@ -10,25 +10,12 @@ export default function LoyaltySection(): React.JSX.Element {
     <div id="loyalty" data-section="loyalty">
         <SectionErrorBoundary name="loyalty">
               <MetricsSimpleCards
-          tag="Customer Rewards"
-          title="Loyalty Program"
-          description="Your loyalty is rewarded. After 10 washes, get your 11th one absolutely free!"
-          metrics={[
-            {
-              value: "10",
-              description: "Washes completed",
-            },
-            {
-              value: "1",
-              description: "Free wash earned",
-            },
-            {
-              value: "24/7",
-              description: "Commitment to quality",
-            },
-          ]}
-          textAnimation="slide-up"
-        />
+        tag="Recompensas"
+        title="Programa de Fidelización"
+        description="Recompensamos tu fidelidad. ¡Después de 10 lavados, el lavado número 11 es totalmente gratis!"
+        metrics={[{"description":"Lavados completados","value":"10"},{"description":"Lavado gratis ganado","value":"1"},{"value":"24/7","description":"Compromiso con la calidad"}]}
+        textAnimation="slide-up"
+      />
         </SectionErrorBoundary>
       </div>
   );
