@@ -15,7 +15,7 @@ const secondaryButton = {
 };
 const items = [
   {
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535144-fuft23fo.jpg"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793438793583-2hmvmqub.jpg"
   },
   {
     imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/tmp/lavaggio-auto-a-domicilio-1786969152496-082aa5ec.png"
