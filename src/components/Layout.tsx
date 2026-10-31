@@ -43,7 +43,7 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarDropdown
           logo="Lava2"
-          logoImageSrc="https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1789389552463-u25buzho.png"
+          logoImageSrc="https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793440355459-mn4tk8ks.png"
           ctaButton={{
             text: "Reservar Ahora",
             href: "https://wa.me/34656474532",

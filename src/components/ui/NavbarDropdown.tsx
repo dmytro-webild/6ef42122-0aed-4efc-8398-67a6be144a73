@@ -44,9 +44,18 @@ const NavbarDropdown = ({ logo, logoImageSrc, navItems, ctaButton }: NavbarDropd
   return (
     <nav data-section="navbar" ref={navRef} className="fixed z-1000 top-5 left-1/2 -translate-x-1/2 w-content-width">
       <div className="flex items-center justify-between p-2 xl:p-3 2xl:p-4 rounded backdrop-blur-md bg-transparent border border-white/10">
-        <a href="/" className="pl-2 flex items-center gap-2 group">
+        <a 
+          href="/" 
+          onClick={(e) => {
+            if (window.location.pathname === '/' && !window.location.hash) {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+          }}
+          className="pl-2 flex items-center gap-2 group cursor-pointer"
+        >
           {logoImageSrc ? (
-            <img src={logoImageSrc} alt={logo || "Logo"} className="h-9 w-auto max-h-9 object-contain rounded-md" />
+            <img src={logoImageSrc} alt={logo || "Logo"} className="h-9 w-auto max-h-9 object-contain rounded-md group-hover:scale-105 transition-transform duration-300" />
           ) : (
             <>
               <div className="size-8 rounded-lg bg-gradient-to-br from-primary-cta to-red-600 flex items-center justify-center shadow-lg shadow-primary-cta/30 group-hover:scale-105 transition-transform duration-300">
