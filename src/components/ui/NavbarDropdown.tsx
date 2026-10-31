@@ -5,7 +5,8 @@ import { cls } from "@/lib/utils";
 import Button from "@/components/ui/Button";
 
 interface NavbarDropdownProps {
-  logo: string;
+  logo?: string;
+  logoImageSrc?: string;
   navItems: { name: string; href: string }[];
   ctaButton: { text: string; href: string };
 }
@@ -19,7 +20,7 @@ const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, on
   onClose?.();
 };
 
-const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
+const NavbarDropdown = ({ logo, logoImageSrc, navItems, ctaButton }: NavbarDropdownProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const navRef = useRef<HTMLElement | null>(null);
 
@@ -44,21 +45,27 @@ const NavbarDropdown = ({ logo, navItems, ctaButton }: NavbarDropdownProps) => {
     <nav data-section="navbar" ref={navRef} className="fixed z-1000 top-5 left-1/2 -translate-x-1/2 w-content-width">
       <div className="flex items-center justify-between p-2 xl:p-3 2xl:p-4 rounded backdrop-blur-md bg-transparent border border-white/10">
         <a href="/" className="pl-2 flex items-center gap-2 group">
-          <div className="size-8 rounded-lg bg-gradient-to-br from-primary-cta to-red-600 flex items-center justify-center shadow-lg shadow-primary-cta/30 group-hover:scale-105 transition-transform duration-300">
-            <Sparkles className="size-4 text-white animate-pulse" />
-          </div>
-          <span className="text-xl font-extrabold tracking-tight text-foreground uppercase italic font-sans">
-            {logo ? (
-              <>
-                {logo.slice(0, -1)}
-                <span className="text-primary-cta">{logo.slice(-1)}</span>
-              </>
-            ) : (
-              <>
-                LAVA<span className="text-primary-cta">2</span>
-              </>
-            )}
-          </span>
+          {logoImageSrc ? (
+            <img src={logoImageSrc} alt={logo || "Logo"} className="h-9 w-auto max-h-9 object-contain rounded-md" />
+          ) : (
+            <>
+              <div className="size-8 rounded-lg bg-gradient-to-br from-primary-cta to-red-600 flex items-center justify-center shadow-lg shadow-primary-cta/30 group-hover:scale-105 transition-transform duration-300">
+                <Sparkles className="size-4 text-white animate-pulse" />
+              </div>
+              <span className="text-xl font-extrabold tracking-tight text-foreground uppercase italic font-sans">
+                {logo ? (
+                  <>
+                    {logo.slice(0, -1)}
+                    <span className="text-primary-cta">{logo.slice(-1)}</span>
+                  </>
+                ) : (
+                  <>
+                    LAVA<span className="text-primary-cta">2</span>
+                  </>
+                )}
+              </span>
+            </>
+          )}
         </a>
 
         <div className="flex items-center gap-2 xl:gap-3 2xl:gap-4">

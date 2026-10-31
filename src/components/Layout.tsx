@@ -42,12 +42,14 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarDropdown
-      logo="Lava2"
-      ctaButton={{
-        text: "Reservar Ahora",
-        href: "https://wa.me/34656474532",
-      }}
-     navItems={navItems} />
+          logo="Lava2"
+          logoImageSrc="https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1789389552463-u25buzho.png"
+          ctaButton={{
+            text: "Reservar Ahora",
+            href: "https://wa.me/34656474532",
+          }}
+          navItems={navItems}
+        />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
