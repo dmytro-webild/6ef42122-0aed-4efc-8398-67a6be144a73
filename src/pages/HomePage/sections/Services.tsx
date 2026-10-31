@@ -38,7 +38,7 @@ type AboutFeaturesSplitProps = {
 
 const ServicesInline = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const imageSrc = "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793439292480-i4p74mkt.jpg";
+  const imageSrc = "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793440184722-ch6frzlj.jpg";
 
   return (
     <section aria-label="About section" className="py-20">
