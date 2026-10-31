@@ -30,7 +30,7 @@ const items = [
     imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535142-om4mmcys.jpg"
   },
   {
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535144-zbyaa6o2.jpg"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793438793575-5g1502ii.jpg"
   }
 ];
 
