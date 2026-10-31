@@ -24,7 +24,7 @@ const items = [
     imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793438793588-rlhuuzja.jpg"
   },
   {
-    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535143-ys98c0ao.jpg"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1793438793590-9vbsvenq.jpg"
   },
   {
     imageSrc: "https://storage.googleapis.com/webild/users/user_3HmIunhUsPJFEwuG291xChkZ9Bs/uploaded-1786969535142-om4mmcys.jpg"
