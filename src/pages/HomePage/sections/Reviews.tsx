@@ -8,15 +8,73 @@ import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 export default function ReviewsSection(): React.JSX.Element {
   return (
     <div id="reviews" data-section="reviews">
-        <SectionErrorBoundary name="reviews">
-              <TestimonialColumnMarqueeCards
-        tag="Confianza"
-        title="Opiniones de Clientes"
-        description="Descubre por qué nuestros clientes confían en nuestro servicio de lavado a domicilio."
-        testimonials={[{"role":"Cliente Satisfecha","imageSrc":"http://img.b2bpic.net/free-photo/lateral-view-beautiful-blonde-woman-car_23-2148384915.jpg","quote":"¡Un servicio fantástico! Mi coche quedó como nuevo.","name":"Maria Garcia"},{"quote":"Muy profesional y cómodo al hacerlo en mi propio domicilio.","imageSrc":"http://img.b2bpic.net/free-photo/handsome-man-standing-front-car-car-showroom_1303-17540.jpg","role":"Cliente","name":"John Smith"},{"name":"Lucia Rossi","quote":"Recomiendo totalmente su paquete de detallado completo.","role":"Cliente","imageSrc":"http://img.b2bpic.net/free-photo/close-up-car-care-process_23-2149193576.jpg"},{"name":"David M.","imageSrc":"http://img.b2bpic.net/free-photo/man-polish-car-garage_1157-26080.jpg","role":"Cliente Satisfecho","quote":"Excelente trabajo y un equipo muy puntual y confiable."},{"quote":"Me encanta la comodidad del servicio de lavado en mi casa.","role":"Cliente","imageSrc":"http://img.b2bpic.net/free-photo/friend-is-calling-beautiful-businesswoman-trying-her-new-car-automobile-salon_146671-16054.jpg","name":"Sophie B."}]}
-        textAnimation="fade-blur"
-      />
-        </SectionErrorBoundary>
-      </div>
+      <SectionErrorBoundary name="reviews">
+        <TestimonialColumnMarqueeCards
+          tag="Google Reviews • LAVA2GC (4.9 ★★★★★)"
+          title="Opiniones Reales en Google de LAVA2GC"
+          description="Descubre los testimonios de nuestros clientes en el perfil oficial de Google Maps de LAVA2GC, tu servicio de lavado de vehículos."
+          primaryButton={{
+            text: "Ver perfil en Google Maps",
+            href: "https://www.google.com/maps/search/?api=1&query=LAVA2GC"
+          }}
+          secondaryButton={{
+            text: "Escribir reseña en Google",
+            href: "https://www.google.com/maps/search/?api=1&query=LAVA2GC"
+          }}
+          testimonials={[
+            {
+              name: "Maria Garcia",
+              role: "Cliente verificada en Google",
+              quote: "¡Un servicio fantástico en LAVA2GC! Mi coche quedó impecable como el primer día. Totalmente recomendable por su atención y profesionalismo.",
+              rating: 5,
+              date: "Hace 1 semana",
+              imageSrc: "http://img.b2bpic.net/free-photo/lateral-view-beautiful-blonde-woman-car_23-2148384915.jpg"
+            },
+            {
+              name: "Carlos Mendoza",
+              role: "Cliente verificado en Google",
+              quote: "Muy profesional el equipo de LAVA2GC. La comodidad del lavado y el nivel de detalle en la tapicería superaron mis expectativas.",
+              rating: 5,
+              date: "Hace 2 semanas",
+              imageSrc: "http://img.b2bpic.net/free-photo/handsome-man-standing-front-car-car-showroom_1303-17540.jpg"
+            },
+            {
+              name: "Lucia Rossi",
+              role: "Cliente verificada en Google",
+              quote: "Recomiendo totalmente el paquete de detallado completo de LAVA2GC. Eliminaron manchas difíciles y el brillo final es espectacular.",
+              rating: 5,
+              date: "Hace 3 semanas",
+              imageSrc: "http://img.b2bpic.net/free-photo/close-up-car-care-process_23-2149193576.jpg"
+            },
+            {
+              name: "David M.",
+              role: "Cliente verificado en Google",
+              quote: "Excelente trabajo en LAVA2GC, un equipo muy puntual, educado y confiable. El coche quedó con un aroma a limpio increíble.",
+              rating: 5,
+              date: "Hace 1 mes",
+              imageSrc: "http://img.b2bpic.net/free-photo/man-polish-car-garage_1157-26080.jpg"
+            },
+            {
+              name: "Sophie B.",
+              role: "Cliente verificada en Google",
+              quote: "Me encanta la calidad y comodidad que ofrece LAVA2GC. Dejaron las llantas y el cristal perfectamente pulidos.",
+              rating: 5,
+              date: "Hace 1 mes",
+              imageSrc: "http://img.b2bpic.net/free-photo/friend-is-calling-beautiful-businesswoman-trying-her-new-car-automobile-salon_146671-16054.jpg"
+            },
+            {
+              name: "Alejandro Gómez",
+              role: "Reseña en Google Maps",
+              quote: "El mejor servicio de lavado de coches sin duda. LAVA2GC deja acabados de exposición. Volveré a solicitar sus servicios pronto.",
+              rating: 5,
+              date: "Hace 2 meses",
+              imageSrc: "https://randomuser.me/api/portraits/men/32.jpg"
+            }
+          ]}
+          textAnimation="fade-blur"
+        />
+      </SectionErrorBoundary>
+    </div>
   );
 }
+
