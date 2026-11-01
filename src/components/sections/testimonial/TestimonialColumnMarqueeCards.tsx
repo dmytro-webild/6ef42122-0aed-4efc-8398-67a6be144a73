@@ -1,4 +1,4 @@
-import { Star } from "lucide-react";
+import { Star, ExternalLink } from "lucide-react";
 import Button from "@/components/ui/Button";
 import TextAnimation from "@/components/ui/TextAnimation";
 import ImageOrVideo from "@/components/ui/ImageOrVideo";
@@ -11,6 +11,7 @@ type Testimonial = {
   rating?: number;
   date?: string;
   googleVerified?: boolean;
+  googleMapsUrl?: string;
 } & ({ imageSrc: string; videoSrc?: never } | { videoSrc: string; imageSrc?: never });
 
 const GoogleIcon = () => (
@@ -36,9 +37,16 @@ const GoogleIcon = () => (
 
 const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
   const rating = testimonial.rating ?? 5;
+  const mapsUrl = testimonial.googleMapsUrl || "https://www.google.com/maps/search/?api=1&query=LAVA2GC";
 
   return (
-    <div className="flex flex-col justify-between gap-4 xl:gap-5 2xl:gap-6 h-full p-6 xl:p-7 2xl:p-8 rounded card">
+    <a
+      href={mapsUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Ver reseña de ${testimonial.name} en Google Maps`}
+      className="flex flex-col justify-between gap-4 xl:gap-5 2xl:gap-6 h-full p-6 xl:p-7 2xl:p-8 rounded card hover:border-primary/50 transition-all hover:shadow-lg cursor-pointer group block text-left"
+    >
       <div className="flex flex-col items-start gap-3 xl:gap-4">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-1">
@@ -47,9 +55,10 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
             ))}
           </div>
           {testimonial.googleVerified !== false && (
-            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs bg-foreground/5 text-foreground/80 font-medium border border-border/30">
+            <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs bg-foreground/5 text-foreground/80 font-medium border border-border/30 group-hover:border-primary/40 group-hover:text-primary transition-colors">
               <GoogleIcon />
-              <span>Google</span>
+              <span>Google Maps</span>
+              <ExternalLink className="size-3 opacity-60 group-hover:opacity-100" />
             </div>
           )}
         </div>
@@ -64,7 +73,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
             className="size-10 md:size-11 2xl:size-12 rounded-full object-cover shrink-0"
           />
           <div className="flex flex-col min-w-0">
-            <span className="text-base text-foreground font-semibold leading-snug truncate">{testimonial.name}</span>
+            <span className="text-base text-foreground font-semibold leading-snug truncate group-hover:text-primary transition-colors">{testimonial.name}</span>
             <span className="text-sm text-foreground/75 leading-snug truncate">{testimonial.role}</span>
           </div>
         </div>
@@ -72,7 +81,7 @@ const TestimonialCard = ({ testimonial }: { testimonial: Testimonial }) => {
           <span className="text-xs text-foreground/50 shrink-0">{testimonial.date}</span>
         )}
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -133,24 +142,24 @@ const TestimonialColumnMarqueeCards = ({
 
         <ScrollReveal variant="slide-up" className="w-content-width mx-auto">
           <div className="flex gap-5 h-[450px] md:h-[550px] overflow-hidden mask-fade-y-medium">
-            <div className="flex-1 overflow-hidden">
-              <div className="flex flex-col gap-5 animate-marquee-vertical-reverse" style={{ animationDuration: "50s" }}>
+            <div className="flex-1 overflow-hidden group">
+              <div className="flex flex-col gap-5 animate-marquee-vertical-reverse group-hover:[animation-play-state:paused]" style={{ animationDuration: "50s" }}>
                 {[...leftColumn, ...leftColumn, ...leftColumn, ...leftColumn].map((testimonial, i) => (
                   <TestimonialCard key={`left-${i}`} testimonial={testimonial} />
                 ))}
               </div>
             </div>
 
-            <div className="hidden md:block flex-1 overflow-hidden">
-              <div className="flex flex-col gap-5 animate-marquee-vertical" style={{ animationDuration: "45s" }}>
+            <div className="hidden md:block flex-1 overflow-hidden group">
+              <div className="flex flex-col gap-5 animate-marquee-vertical group-hover:[animation-play-state:paused]" style={{ animationDuration: "45s" }}>
                 {[...middleColumn, ...middleColumn, ...middleColumn, ...middleColumn].map((testimonial, i) => (
                   <TestimonialCard key={`mid-${i}`} testimonial={testimonial} />
                 ))}
               </div>
             </div>
 
-            <div className="hidden md:block flex-1 overflow-hidden">
-              <div className="flex flex-col gap-5 animate-marquee-vertical-reverse" style={{ animationDuration: "55s" }}>
+            <div className="hidden md:block flex-1 overflow-hidden group">
+              <div className="flex flex-col gap-5 animate-marquee-vertical-reverse group-hover:[animation-play-state:paused]" style={{ animationDuration: "55s" }}>
                 {[...rightColumn, ...rightColumn, ...rightColumn, ...rightColumn].map((testimonial, i) => (
                   <TestimonialCard key={`right-${i}`} testimonial={testimonial} />
                 ))}

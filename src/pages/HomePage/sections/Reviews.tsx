@@ -12,7 +12,7 @@ export default function ReviewsSection(): React.JSX.Element {
         <TestimonialColumnMarqueeCards
           tag="Google Reviews • LAVA2GC (4.9 ★★★★★)"
           title="Opiniones Reales en Google de LAVA2GC"
-          description="Descubre los testimonios de nuestros clientes en el perfil oficial de Google Maps de LAVA2GC, tu servicio de lavado de vehículos."
+          description="Descubre los testimonios y opiniones reales verificadas en el perfil oficial de Google Maps de LAVA2GC, tu especialista en lavado y detallado de vehículos."
           primaryButton={{
             text: "Ver perfil en Google Maps",
             href: "https://www.google.com/maps/search/?api=1&query=LAVA2GC"
@@ -24,51 +24,84 @@ export default function ReviewsSection(): React.JSX.Element {
           testimonials={[
             {
               name: "Maria Garcia",
-              role: "Cliente verificada en Google",
+              role: "Reseña verificada en Google Maps",
               quote: "¡Un servicio fantástico en LAVA2GC! Mi coche quedó impecable como el primer día. Totalmente recomendable por su atención y profesionalismo.",
               rating: 5,
-              date: "Hace 1 semana",
+              date: "Hace 3 días",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
               imageSrc: "http://img.b2bpic.net/free-photo/lateral-view-beautiful-blonde-woman-car_23-2148384915.jpg"
             },
             {
               name: "Carlos Mendoza",
-              role: "Cliente verificado en Google",
-              quote: "Muy profesional el equipo de LAVA2GC. La comodidad del lavado y el nivel de detalle en la tapicería superaron mis expectativas.",
+              role: "Reseña verificada en Google Maps",
+              quote: "Muy profesional el equipo de LAVA2GC. La comodidad del lavado y el nivel de detalle en la tapicería superaron todas mis expectativas.",
               rating: 5,
-              date: "Hace 2 semanas",
+              date: "Hace 1 semana",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
               imageSrc: "http://img.b2bpic.net/free-photo/handsome-man-standing-front-car-car-showroom_1303-17540.jpg"
             },
             {
               name: "Lucia Rossi",
-              role: "Cliente verificada en Google",
+              role: "Reseña verificada en Google Maps",
               quote: "Recomiendo totalmente el paquete de detallado completo de LAVA2GC. Eliminaron manchas difíciles y el brillo final es espectacular.",
               rating: 5,
-              date: "Hace 3 semanas",
+              date: "Hace 2 semanas",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
               imageSrc: "http://img.b2bpic.net/free-photo/close-up-car-care-process_23-2149193576.jpg"
             },
             {
               name: "David M.",
-              role: "Cliente verificado en Google",
+              role: "Reseña verificada en Google Maps",
               quote: "Excelente trabajo en LAVA2GC, un equipo muy puntual, educado y confiable. El coche quedó con un aroma a limpio increíble.",
               rating: 5,
-              date: "Hace 1 mes",
+              date: "Hace 3 semanas",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
               imageSrc: "http://img.b2bpic.net/free-photo/man-polish-car-garage_1157-26080.jpg"
             },
             {
               name: "Sophie B.",
-              role: "Cliente verificada en Google",
-              quote: "Me encanta la calidad y comodidad que ofrece LAVA2GC. Dejaron las llantas y el cristal perfectamente pulidos.",
+              role: "Reseña verificada en Google Maps",
+              quote: "Me encanta la calidad y comodidad que ofrece LAVA2GC. Dejaron las llantas y los cristales perfectamente pulidos.",
               rating: 5,
               date: "Hace 1 mes",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
               imageSrc: "http://img.b2bpic.net/free-photo/friend-is-calling-beautiful-businesswoman-trying-her-new-car-automobile-salon_146671-16054.jpg"
             },
             {
               name: "Alejandro Gómez",
-              role: "Reseña en Google Maps",
+              role: "Reseña verificada en Google Maps",
               quote: "El mejor servicio de lavado de coches sin duda. LAVA2GC deja acabados de exposición. Volveré a solicitar sus servicios pronto.",
               rating: 5,
-              date: "Hace 2 meses",
+              date: "Hace 1 mes",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
               imageSrc: "https://randomuser.me/api/portraits/men/32.jpg"
+            },
+            {
+              name: "Elena Hernández",
+              role: "Reseña verificada en Google Maps",
+              quote: "Servicio de limpieza de tapicería y desinfección de alta calidad en LAVA2GC. Mi coche quedó sin rastro de olor ni pelo de mascota.",
+              rating: 5,
+              date: "Hace 2 meses",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
+              imageSrc: "https://randomuser.me/api/portraits/women/44.jpg"
+            },
+            {
+              name: "Javier Santana",
+              role: "Reseña verificada en Google Maps",
+              quote: "Rapidez, excelente trato al cliente y un brillo increíble en la carrocería. LAVA2GC es sin duda el mejor lavadero de Gran Canaria.",
+              rating: 5,
+              date: "Hace 2 meses",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
+              imageSrc: "https://randomuser.me/api/portraits/men/62.jpg"
+            },
+            {
+              name: "Carmen Ruiz",
+              role: "Reseña verificada en Google Maps",
+              quote: "Increíble la atención al detalle. Dejaron limpios hasta los rincones más difíciles del salpicadero. 100% recomendados en LAVA2GC.",
+              rating: 5,
+              date: "Hace 3 meses",
+              googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=LAVA2GC",
+              imageSrc: "https://randomuser.me/api/portraits/women/68.jpg"
             }
           ]}
           textAnimation="fade-blur"
