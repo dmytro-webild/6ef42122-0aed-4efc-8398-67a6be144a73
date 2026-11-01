@@ -13,7 +13,30 @@ export default function PricingSection(): React.JSX.Element {
         tag="Transparencia"
         title="Tarifas y Precios"
         description="Servicios premium de lavado de coches a domicilio a tarifas competitivas."
-        plans={[{"description":"Lavado exterior básico.","price":"12 €","tag":"Esencial","features":["Lavado a mano","Brillo de neumáticos","Limpieza de cristales"],"primaryButton":{"text":"Reservar Ahora","href":"https://wa.me/34656474532"}},{"highlight":"Más Recomendado","description":"Interior y exterior estándar.","tag":"Estándar","features":["Lavado a mano","Aspirado completo","Limpieza de plásticos e interior","Cristales"],"price":"30 €","primaryButton":{"text":"Reservar Ahora","href":"https://wa.me/34656474532"}},{"features":["Interior completo","Exterior completo","Detallado integral","Brillo de neumáticos"],"primaryButton":{"href":"https://wa.me/34656474532","text":"Reservar Ahora"},"tag":"Completo","description":"Lavado completo profesional por dentro y por fuera.","price":"40 €"}]}
+        plans={[
+          {
+            tag: "Esencial",
+            price: "desde 20 €",
+            description: "Lavado exterior básico.",
+            features: ["Lavado a mano", "Brillo de neumáticos", "Limpieza de cristales"],
+            primaryButton: { text: "Reservar Ahora", href: "https://wa.me/34656474532" }
+          },
+          {
+            tag: "Estándar",
+            price: "desde 50 €",
+            highlight: "Más Recomendado",
+            description: "Interior y exterior estándar.",
+            features: ["Lavado a mano", "Aspirado completo", "Limpieza de plásticos e interior", "Cristales"],
+            primaryButton: { text: "Reservar Ahora", href: "https://wa.me/34656474532" }
+          },
+          {
+            tag: "Completo",
+            price: "desde 60 €",
+            description: "Lavado completo profesional por dentro y por fuera.",
+            features: ["Interior completo", "Exterior completo", "Detallado integral", "Brillo de neumáticos"],
+            primaryButton: { text: "Reservar Ahora", href: "https://wa.me/34656474532" }
+          }
+        ]}
         textAnimation="fade"
       />
         </SectionErrorBoundary>

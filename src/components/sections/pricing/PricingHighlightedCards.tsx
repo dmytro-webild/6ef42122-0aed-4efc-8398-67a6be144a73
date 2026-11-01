@@ -73,7 +73,7 @@ const PricingHighlightedCards = ({
 
               <div className={cls("flex flex-col items-center gap-4 xl:gap-5 2xl:gap-6 p-6 xl:p-7 2xl:p-8 flex-1 card text-center", plan.highlight ? "rounded-t-none rounded-b" : "rounded")}>
                 <div className="flex flex-col gap-1">
-                  <span className="text-5xl md:text-6xl font-semibold">{plan.price}</span>
+                  <span className="text-3xl sm:text-4xl md:text-5xl font-semibold">{plan.price}</span>
                   <span className="text-base font-medium">{plan.tag}</span>
                 </div>
 
