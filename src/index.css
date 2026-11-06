@@ -7,13 +7,13 @@
   /* @colorThemes/lightTheme/grayNavyBlue */
   --background: #0a0a0a;
   --card: #1a1a1a;
-  --foreground: #f0f8ffe6;
-  --primary-cta: #cee7ff;
-  --primary-cta-text: #0a0a0a;
-  --secondary-cta: #1a1a1a;
-  --secondary-cta-text: #f0f8ffe6;
-  --accent: #737373;
-  --background-accent: #737373;
+  --foreground: #ffffff;
+  --primary-cta: #1f7cff;
+  --primary-cta-text: #ffffff;
+  --secondary-cta: #010101;
+  --secondary-cta-text: #ffffff;
+  --accent: #1f7cff;
+  --background-accent: #f96b2f;
 
   /* @layout/border-radius/rounded */
   --radius: 1rem;
